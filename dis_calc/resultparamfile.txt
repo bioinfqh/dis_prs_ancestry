@@ -1,0 +1,2 @@
+cervical_cancer	dis_calc/scores_1.profile
+coronary_artery_disease	dis_calc/scores_2.profile

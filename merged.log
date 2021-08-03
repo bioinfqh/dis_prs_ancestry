@@ -1,0 +1,18 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-no-sex
+  --bfile plink_dataset_new
+  --bmerge data_file_new
+  --extract keep.txt
+  --make-bed
+  --out merged
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Sun Apr 25 11:00:17 2021
+
+Random number seed: 1619348417
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+Error: Failed to open plink_dataset_new.bed.
+
+End time: Sun Apr 25 11:00:17 2021

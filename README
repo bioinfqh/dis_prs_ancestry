@@ -1,0 +1,3 @@
+README:
+
+This docker container contains a Django webserver with basic functionality for generating PRS and disease gene reports from VCF files.

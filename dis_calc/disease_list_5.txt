@@ -1,0 +1,6 @@
+breast_cancer,dis_calc/score_files/breast_cancer_snps.txt,none
+cervical_cancer,dis_calc/score_files/cervical_cancer_snps.txt,none
+colorectal_cancer,dis_calc/score_files/colorectal_cancer_snps.txt,none
+coronary_artery_disease,dis_calc/score_files/coronary_artery_disease_snps.txt,none
+hypertension,dis_calc/score_files/hypertension_snps.txt,none
+prostate_cancer,dis_calc/score_files/prostate_cancer_snps.txt,none

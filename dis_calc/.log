@@ -1,0 +1,25 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --make-bed
+  --out dis_calc/
+  --vcf prs_vcf.vcf
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Mon Apr 26 11:12:23 2021
+
+Random number seed: 1619435543
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+--vcf: dis_calc/-temporary.bed + dis_calc/-temporary.bim +
+dis_calc/-temporary.fam written.
+690842 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to dis_calc/.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... done.
+690842 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to dis_calc/.bed + dis_calc/.bim + dis_calc/.fam ... done.
+
+End time: Mon Apr 26 11:12:25 2021

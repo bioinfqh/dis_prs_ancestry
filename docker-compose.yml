@@ -1,0 +1,13 @@
+version: '3'
+
+# all containers have access to a shared volume in /code. files that are modified by the celery container can be accessed from the django container etc.
+services:
+  
+  # add default values for environment variables by changing PARAM=${var} to PARAM=${var:-default}
+  web:
+    build: .
+    command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DJANGO_ALLOWED_HOSTS=${allowed_hosts:-['*']}
+    ports:
+      - "8000:8000"

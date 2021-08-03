@@ -1,0 +1,2 @@
+cervical_cancer	0.6932610195999441	0.9577015163607342	dis_calc/results_and_phenos1.txt
+coronary_artery_disease	0.5201659296851191	0.5814046288906624	dis_calc/results_and_phenos2.txt

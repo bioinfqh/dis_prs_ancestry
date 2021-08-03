@@ -1,0 +1,22 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-no-sex
+  --bfile dis_calc/merged2filtered
+  --exclude merged-merge.missnp
+  --extract keep.txt
+  --make-bed
+  --out data_file_new
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Sun Apr 25 11:00:17 2021
+
+Random number seed: 1619348417
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+1245 variants loaded from .bim file.
+2505 people (0 males, 0 females, 2505 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to data_file_new.nosex .
+2505 phenotype values loaded from .fam.
+Error: No variants remaining after --extract.
+
+End time: Sun Apr 25 11:00:17 2021

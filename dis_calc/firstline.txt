@@ -1,0 +1,1 @@
+hm_rsid	hm_effect_allele	p_value	hm_beta

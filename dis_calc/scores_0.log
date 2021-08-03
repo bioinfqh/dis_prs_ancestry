@@ -1,0 +1,30 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --bfile dis_calc/merged2filtered
+  --out dis_calc/scores_0
+  --score dis_calc/score_files/cervical_cancer_snps.txt 1 2 3
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Sun Apr 25 11:30:04 2021
+
+Random number seed: 1619350204
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+1245 variants loaded from .bim file.
+2505 people (0 males, 0 females, 2505 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to dis_calc/scores_0.nosex .
+2505 phenotype values loaded from .fam.
+Warning: Ignoring phenotypes of missing-sex samples.  If you don't want those
+phenotypes to be ignored, use the --allow-no-sex flag.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2505 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.999246.
+1245 variants and 2505 people pass filters and QC.
+Note: No phenotypes present.
+Warning: 4 lines skipped in --score file (4 due to variant ID mismatch, 0 due
+to allele code mismatch); see dis_calc/scores_0.nopred for details.
+--score: 28 valid predictors loaded.
+--score: Results written to dis_calc/scores_0.profile .
+
+End time: Sun Apr 25 11:30:04 2021

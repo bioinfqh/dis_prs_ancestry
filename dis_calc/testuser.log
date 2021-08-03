@@ -1,0 +1,27 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --bfile 3285b0mtsjwbtxgwlukasqhflke3_fc3lh9p
+  --out testuser
+  --recode vcf
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/refpanel_calc
+Start time: Sun Apr 25 13:06:34 2021
+
+Random number seed: 1619348794
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+690842 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to testuser.nosex .
+1 phenotype value loaded from .fam.
+Warning: Ignoring phenotypes of missing-sex samples.  If you don't want those
+phenotypes to be ignored, use the --allow-no-sex flag.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... done.
+690842 variants and 1 person pass filters and QC.
+Among remaining phenotypes, 1 is a case and 0 are controls.
+Warning: Underscore(s) present in sample IDs.
+--recode vcf to testuser.vcf ... done.
+
+End time: Sun Apr 25 13:06:35 2021

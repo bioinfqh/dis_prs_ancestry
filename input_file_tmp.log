@@ -1,0 +1,29 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --make-bed
+  --out input_file_tmp
+  --vcf prs_vcf.vcf
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Sun Apr 25 11:00:15 2021
+
+Random number seed: 1619348415
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+--vcf: input_file_tmp-temporary.bed + input_file_tmp-temporary.bim +
+input_file_tmp-temporary.fam written.
+720767 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to input_file_tmp.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.958898.
+720767 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to input_file_tmp.bed + input_file_tmp.bim + input_file_tmp.fam ...
+done.
+
+End time: Sun Apr 25 11:00:17 2021

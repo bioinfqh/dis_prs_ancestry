@@ -1,0 +1,18 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --make-bed
+  --out dis_calc/sample1
+  --vcf prs_vcf.vcf
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Mon Apr 26 10:49:56 2021
+
+Random number seed: 1619434196
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+Error: Multiple instances of '_' in sample ID.
+If you do not want '_' to be treated as a FID/IID delimiter, use --double-id or
+--const-fid to choose a different method of converting VCF sample IDs to PLINK
+IDs, or --id-delim to change the FID/IID delimiter.
+
+End time: Mon Apr 26 10:49:56 2021

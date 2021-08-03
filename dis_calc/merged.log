@@ -1,0 +1,40 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-no-sex
+  --bfile dis_calc/testsample
+  --bmerge dis_calc/merged2filtered
+  --extract dis_calc/keep.txt
+  --make-bed
+  --out dis_calc/merged
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Mon Apr 26 11:45:42 2021
+
+Random number seed: 1619437542
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+Allocated 2886 MB successfully, after larger attempt(s) failed.
+1 person loaded from dis_calc/testsample.fam.
+2505 people to be merged from dis_calc/merged2filtered.fam.
+Of these, 2505 are new, while 0 are present in the base dataset.
+690842 markers loaded from dis_calc/testsample.bim.
+1245 markers to be merged from dis_calc/merged2filtered.bim.
+Of these, 757 are new, while 488 are present in the base dataset.
+Performing single-pass merge (2506 people, 691599 variants).
+Merged fileset written to dis_calc/merged-merge.bed + dis_calc/merged-merge.bim
++ dis_calc/merged-merge.fam .
+691599 variants loaded from .bim file.
+2506 people (0 males, 0 females, 2506 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to dis_calc/merged.nosex .
+2506 phenotype values loaded from .fam.
+--extract: 431 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2506 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.994582.
+431 variants and 2506 people pass filters and QC.
+Among remaining phenotypes, 626 are cases and 1880 are controls.
+--make-bed to dis_calc/merged.bed + dis_calc/merged.bim + dis_calc/merged.fam
+... done.
+
+End time: Mon Apr 26 11:48:01 2021

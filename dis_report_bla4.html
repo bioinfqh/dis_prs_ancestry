@@ -1,0 +1,615 @@
+<!--
+  Invoice template.
+  Styled using Tailwind CSS.
+  Head to the CSS tab to learn more.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<!---<link rel="stylesheet" href="tailwind.min.css">-->
+<style>
+
+.TFtable{ 
+text-align:center  !important;
+/* border:solid black 1px !important; */
+border-collapse: collapse !important;
+max-width: 1150px !important;
+table-layout: fixed !important;
+	}
+	.TFtable td{ 
+		padding:7px; border:solid black 1px;
+		
+	}
+	/* provide some minimal visual accomodation for IE8 and below */
+	.TFtable tr{
+	padding:7px; border:solid black 1px;
+		background: white;
+		
+	}
+	.TFtable th {
+	background-color: #704170 !important;
+	color:white  !important;
+	font-weight: bold  !important;
+	text-align:center  !important;
+	border-collapse: collapse !important;
+ /*border:0px;*/
+}
+.TFtable tr td:last-child{
+max-width:300px;
+word-wrap: break-word;
+}
+
+
+.TFtable tr td:first-child{
+max-width:200px;
+}
+
+.InhTable{ 
+text-align:center  !important;
+/* border:solid black 1px !important; */
+border-collapse: collapse !important;
+	}
+	.InhTable td{ 
+		padding:7px; border:solid black 1px;
+		
+	}
+	/* provide some minimal visual accomodation for IE8 and below */
+	.InhTable tr{
+	padding:7px; border:solid black 1px;
+		background: white;
+		
+	}
+	.InhTable th {
+	background-color: #704170 !important;
+	color:white  !important;
+	font-weight: bold  !important;
+	text-align:center  !important;
+	border-collapse: collapse !important;
+ /*border:0px;*/
+}
+
+.LineTable2{ 
+
+/* border:solid black 1px !important; */
+border-collapse: collapse !important;
+padding:0px; border:none;
+	}
+	.LineTable2 td{ 
+		padding:0px; border:none;
+		
+	}
+	/* provide some minimal visual accomodation for IE8 and below */
+	.LineTable2 tr{
+	padding:0px; border:none;
+		
+	}
+	.LineTable2 th {
+	padding:0px; border:none;
+	border-collapse: collapse !important;
+ /*border:0px;*/
+}
+.PubmedTable{ 
+text-align:center  !important;
+/* border:solid black 1px !important; */
+border-collapse: collapse !important;
+
+	}
+	.PubmedTable td{ 
+		padding:7px; border:solid black 1px;
+		font-size: 10px;
+		
+	}
+	/* provide some minimal visual accomodation for IE8 and below */
+	.PubmedTable tr{
+	padding:7px; border:solid black 1px;
+		background: white;
+        font-size: 10px;
+
+		
+	}
+	.PubmedTable th {
+	background-color: #704170 !important;
+	color:white  !important;
+	font-weight: bold  !important;
+	text-align:center  !important;
+    font-size: 14px;
+	border-collapse: collapse !important;
+ /*border:0px;*/
+}
+.PubmedTable tr td:last-child{
+max-width:800px;
+word-wrap: break-word;
+}
+	/*  Define the background color for all the ODD background rows  */
+	
+	.PathStr{
+border-collapse:separate;
+    border:solid black 0px;
+    border-radius:70px;
+    -moz-border-radius:6px;
+    background-color: green;
+width: 1200px; 
+height: 200px;
+    vertical-align: middle;
+}
+
+
+.AddressTable {
+  width: 1200px;
+  border: none !important;
+  border-collapse: collapse;
+}
+
+
+.AddressTable th {  
+width: 400px;
+  border: none !important;
+
+}
+body {
+  font-family: 'Lato';
+}
+
+}
+
+.numeric-tabular {
+  // Sets the numbers width so that they stay aligned vertically.
+  font-variant-numeric: tabular-nums;
+}
+</style>
+</head>
+<body>
+
+<div class="flex flex-row items-center justify-between mb-8">
+  <div>
+    <img
+      src="https://via.placeholder.com/290x320"
+      height="160"
+      width="145"
+    >
+  </div>
+
+<table class="AddressTable" id="AddressTable_1">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient Name:</td>
+      <td>Specimen Type:</td>
+      <td>Client Name:</td>
+    </tr>
+    <tr>
+      <td>Date of Birth:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>Receive Date:</td>
+      <td>Mailing Address:</td>
+    </tr>
+    <tr>
+      <td>Accession ID:</td>
+      <td>Collection Date:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cross Reference:</td>
+      <td>Report Date:</td>
+      <td>Phone Number:</td>
+    </tr>
+  </tbody>
+</table>
+<br /><br />
+<table class="LineTable" id="LineTable_1">
+  <thead>
+    <tr>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Client Name:</td>
+    </tr>
+  </tbody>
+</table><br /><br />
+<hr>
+<table class="LineTable" id="LineTable_1">
+  <thead>
+    <tr>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Test Performed:</b> Whole Exome Sequencing and Deletion/Duplication Analysis, Trio</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<br />
+<hr><h1><p style="color: #704170"> Analyses of genes related to all </p></h1><br /><hr>
+  <div class="PathStr" style="background:green">
+  <table>
+  <thead>
+  <tr style="height:50px;"><th></th>
+  <th>
+   
+    </th>
+  </tr>    
+  </thead>
+  <tbody>
+  <tr style="height:100px;"><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="med_symbol.png"  height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  <th>No pathogenic sequence variant(s) in gene related to all detected .<br />
+</th>
+  </tr>   
+  <tr style="height:50px;"><th></th>
+  <th>
+    </th>
+  </tr>   
+  </tbody>
+    </table>
+  </div>
+<br />
+<hr><br /><h1><p style="color: #704170"> Relevant Findings and Interpretation</p></h1><br />
+<p style="color: #704170"><b>Sequence variants related to all:</b></p>
+<table class="border-collapse mb-8 numeric-tabular table table-auto w-full">
+<table border="1" class="TFtable" id="snp_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nr.</th>
+      <th>Classification</th>
+      <th>Gene</th>
+      <th>Exon/
+Intron</th>
+      <th>SNP ID</th>
+      <th>DNA change</th>
+      <th>Protein
+change</th>
+      <th>Chromosomal
+ location</th>
+      <th>Zygosity</th>
+      <th>Inheri-
+tance</th>
+      <th>Disease
+Groups</th>
+      <th>Associated Disease(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>benign</td>
+      <td>MASP2</td>
+      <td>1</td>
+      <td>rs1782455</td>
+      <td>c.1479C&gt;T</td>
+      <td>p.Ser493=</td>
+      <td>Chr1:11087524</td>
+      <td>heterozygous</td>
+      <td>not given</td>
+      <td>N/A</td>
+      <td>Dominant;MASP2 deficiency;Frontotemporal dementia;Amyotrophic Lateral Sclerosis, Dominant</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>likely_benign</td>
+      <td>MASP2</td>
+      <td>1</td>
+      <td>rs2273346</td>
+      <td>c.1130T&gt;C</td>
+      <td>p.Val377Ala</td>
+      <td>Chr1:11090897</td>
+      <td>heterozygous</td>
+      <td>not given</td>
+      <td>N/A</td>
+      <td>MASP2 deficiency;MASP2 deficiency</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>benign</td>
+      <td>MASP2</td>
+      <td>1</td>
+      <td>rs12142107</td>
+      <td>c.891G&gt;A</td>
+      <td>p.Ala297=</td>
+      <td>Chr1:11097867</td>
+      <td>heterozygous</td>
+      <td>not given</td>
+      <td>N/A</td>
+      <td>MASP2 deficiency</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>benign</td>
+      <td>MASP2</td>
+      <td>1</td>
+      <td>rs7536030</td>
+      <td>c.729C&gt;T</td>
+      <td>p.Tyr243=</td>
+      <td>Chr1:11103408</td>
+      <td>heterozygous</td>
+      <td>not given</td>
+      <td>N/A</td>
+      <td>MASP2 deficiency</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>benign</td>
+      <td>MTHFR</td>
+      <td>1</td>
+      <td>rs4846051</td>
+      <td>c.1305C&gt;T</td>
+      <td>p.Phe435=</td>
+      <td>Chr1:11854457</td>
+      <td>heterozygous</td>
+      <td>AR</td>
+      <td>Prenatal screening panel</td>
+      <td>folate-sensitive;Homocystinuria due to MTHFR deficiency</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>drug response</td>
+      <td>MTHFR</td>
+      <td>1</td>
+      <td>rs1801133</td>
+      <td>c.665C&gt;T</td>
+      <td>p.Ala222Val</td>
+      <td>Chr1:11856378</td>
+      <td>heterozygous</td>
+      <td>AR</td>
+      <td>Prenatal screening panel</td>
+      <td>Venous thrombosis;Neoplasm of stomach;Gastrointestinal stroma tumor;MTHFR deficiency, thermolabile type;Neural tube defects, folate-sensitive;carboplatin response - Efficacy;cyclophosphamide response - Toxicity/ADR;methotrexate response - Dosage, Efficacy, Toxicity/ADR;Neural tube defects, folate-sensitive;Homocystinuria due to methylene tetrahydrofolate reductase deficiency;MTHFR deficiency, thermolabile type;MTHFR deficiency, thermolabile type;Homocystinuria due to MTHFR deficiency</td>
+    </tr>
+  </tbody>
+</table>
+</table>
+
+<br />
+<div class="items-center flex justify-between mb-8" style="max-width: 1450px; table-layout: fixed; ">
+  <div class="border-2 border-blue-600 px-4 py-2 w-3/4">
+    Gene Name: <b>MASP2</b>. SNPs in Gene: <b>rs1782455;rs2273346;rs12142107;rs7536030</b>.  Associated diseases: MASP2 deficiency<br /><b>Description:</b> This gene encodes a member of the peptidase S1 family of serine proteases. The encoded preproprotein is proteolytically processed to generate A and B chains that heterodimerize to form the mature protease. This protease cleaves complement components C2 and C4 in order to generate C3 convertase in the lectin pathway of the complement system. The encoded protease also plays a role in the coagulation cascade through cleavage of prothrombin to form thrombin. Myocardial infarction and acute stroke patients exhibit reduced serum concentrations of the encoded protein. Alternative splicing results in multiple transcript variants, at least one of which encodes an isoform that is proteolytically processed. [provided by RefSeq, Feb 2016].<br />(Mut.Nbr. 2):<b>MASP2 c.1130T>C (p.Val377Ala) - MASP2 deficiency</b>&nbsp;&nbsp;This variant was observed in the ICSL laboratory as part of a predisposition screen in an ostensibly healthy population. It had not been previously curated by ICSL or reported in the Human Gene Mutation Database (HGMD: prior to June 1st, 2018), and was therefore a candidate for classification through an automated scoring system. Utilizing variant allele frequency, disease prevalence and penetrance estimates, and inheritance mode, an automated score was calculated to assess if this variant is too frequent to cause the disease. Based on the score and internal cut-off values, a variant classified as benign is not then subjected to further curation. The score for this variant resulted in a classification of benign for this disease.<br />(Mut.Nbr. 3):<b>MASP2 c.891G>A (p.Ala297=) - MASP2 deficiency</b>&nbsp;&nbsp;This variant was observed in the ICSL laboratory as part of a predisposition screen in an ostensibly healthy population. It had not been previously curated by ICSL or reported in the Human Gene Mutation Database (HGMD: prior to June 1st, 2018), and was therefore a candidate for classification through an automated scoring system. Utilizing variant allele frequency, disease prevalence and penetrance estimates, and inheritance mode, an automated score was calculated to assess if this variant is too frequent to cause the disease. Based on the score and internal cut-off values, a variant classified as benign is not then subjected to further curation. The score for this variant resulted in a classification of benign for this disease.<br />(Mut.Nbr. 4):<b>MASP2 c.729C>T (p.Tyr243=) - MASP2 deficiency</b>&nbsp;&nbsp;This variant was observed in the ICSL laboratory as part of a predisposition screen in an ostensibly healthy population. It had not been previously curated by ICSL or reported in the Human Gene Mutation Database (HGMD: prior to June 1st, 2018), and was therefore a candidate for classification through an automated scoring system. Utilizing variant allele frequency, disease prevalence and penetrance estimates, and inheritance mode, an automated score was calculated to assess if this variant is too frequent to cause the disease. Based on the score and internal cut-off values, a variant classified as benign is not then subjected to further curation. The score for this variant resulted in a classification of benign for this disease.<br />
+  </div>
+</div>
+<br /><br />
+
+<hr>
+<p style="color: #704170"><b>Variant Statistics:</b></p>
+<table class="border-collapse mb-8 numeric-tabular table table-auto w-full">
+<table border="1" class="InhTable" id="inh_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Mutation
+Number</th>
+      <th>Gene</th>
+      <th>DNA change</th>
+      <th>Transcript ID</th>
+      <th>AF in patient</th>
+      <th>Nbr. Reads</th>
+      <th>Quality</th>
+      <th>Frequency
+ globally</th>
+      <th>Maximal AF
+ globally</th>
+      <th>Population
+ with maximal
+ AF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>MASP2</td>
+      <td>c.1479C&gt;T</td>
+      <td>ENST00000400897.3</td>
+      <td>61.40%</td>
+      <td>57</td>
+      <td>42</td>
+      <td>79.41%</td>
+      <td>86.64%</td>
+      <td>East</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MASP2</td>
+      <td>c.1130T&gt;C</td>
+      <td>ENST00000400897.3</td>
+      <td>42.86%</td>
+      <td>21</td>
+      <td>62</td>
+      <td>4.95%</td>
+      <td>20.90%</td>
+      <td>East</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>MASP2</td>
+      <td>c.891G&gt;A</td>
+      <td>ENST00000400897.3</td>
+      <td>45.00%</td>
+      <td>20</td>
+      <td>56</td>
+      <td>5.79%</td>
+      <td>25.19%</td>
+      <td>African</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>MASP2</td>
+      <td>c.729C&gt;T</td>
+      <td>ENST00000400897.3</td>
+      <td>51.52%</td>
+      <td>33</td>
+      <td>66</td>
+      <td>2.00%</td>
+      <td>26.48%</td>
+      <td>African</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MTHFR</td>
+      <td>c.1305C&gt;T</td>
+      <td>ENST00000376592.1</td>
+      <td>52.17%</td>
+      <td>46</td>
+      <td>59</td>
+      <td>97.55%</td>
+      <td>100.00%</td>
+      <td>FIN</td>
+    </tr>
+  </tbody>
+</table>
+</table>
+
+
+<br />
+<p style="font-size: 14px;"><b>Note:</b> Quality Score: &#60;10 is low quality; 10-20 is medium quality; &#62;20 is high quality</p>
+<br />
+<hr>
+<p style="color: #704170"><b>Relevant Articles:</b></p>
+<table class="border-collapse mb-8 numeric-tabular table table-auto w-full">
+<table border="1" class="PubmedTable" id="pubmed_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Number</th>
+      <th>Name of Mutation</th>
+      <th>Pubmed ID</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>MASP2 c.1479C&gt;T (p.Ser493=)</td>
+      <td>19405982</td>
+      <td>Lack of association between polymorphisms of MASP2 and susceptibility to SARS coronavirus infection.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MASP2 c.1479C&gt;T (p.Ser493=)</td>
+      <td>24033266</td>
+      <td>A systematic approach to assessing the clinical significance of genetic variants.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MASP2 c.1479C&gt;T (p.Ser493=)</td>
+      <td>24632598</td>
+      <td>Association of MASP-2 levels and MASP2 gene polymorphisms with rheumatoid arthritis in patients and their relatives.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MASP2 c.1479C&gt;T (p.Ser493=)</td>
+      <td>27596159</td>
+      <td>Association of polymorphisms in genes of factors involved in regulation of splicing of cystic fibrosis transmembrane conductance regulator mRNA with acute respiratory distress syndrome in children with pneumonia.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MASP2 c.1130T&gt;C (p.Val377Ala)</td>
+      <td>17252003</td>
+      <td>Deficiency of mannan-binding lectin associated serine protease-2 due to missense polymorphisms.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MASP2 c.1130T&gt;C (p.Val377Ala)</td>
+      <td>19234189</td>
+      <td>Polymorphisms in mannan-binding lectin (MBL)-associated serine protease 2 affect stability, binding to MBL, and enzymatic activity.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MASP2 c.1130T&gt;C (p.Val377Ala)</td>
+      <td>19405982</td>
+      <td>Lack of association between polymorphisms of MASP2 and susceptibility to SARS coronavirus infection.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MASP2 c.1130T&gt;C (p.Val377Ala)</td>
+      <td>22380611</td>
+      <td>Mutations of complement lectin pathway genes MBL2 and MASP2 associated with placental malaria.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MASP2 c.1130T&gt;C (p.Val377Ala)</td>
+      <td>24632598</td>
+      <td>Association of MASP-2 levels and MASP2 gene polymorphisms with rheumatoid arthritis in patients and their relatives.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>MASP2 c.891G&gt;A (p.Ala297=)</td>
+      <td>19405982</td>
+      <td>Lack of association between polymorphisms of MASP2 and susceptibility to SARS coronavirus infection.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MTHFR c.1305C&gt;T (p.Phe435=)</td>
+      <td>16439441</td>
+      <td>Racial or ethnic differences in allele frequencies of single-nucleotide polymorphisms in the methylenetetrahydrofolate reductase gene and their influence on response to methotrexate in rheumatoid arthritis.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MTHFR c.1305C&gt;T (p.Phe435=)</td>
+      <td>18483346</td>
+      <td>Direct genotyping of single nucleotide polymorphisms in methyl metabolism genes using probe-free high-resolution melting analysis.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MTHFR c.1305C&gt;T (p.Phe435=)</td>
+      <td>19493349</td>
+      <td>118 SNPs of folate-related genes and risks of spina bifida and conotruncal heart defects.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MTHFR c.1305C&gt;T (p.Phe435=)</td>
+      <td>22241680</td>
+      <td>Deep sequencing study of the MTHFR gene to identify variants associated with myelomeningocele.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MTHFR c.1305C&gt;T (p.Phe435=)</td>
+      <td>23300409</td>
+      <td>Chapter 7: Pharmacogenomics.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>MTHFR c.665C&gt;T (p.Ala222Val)</td>
+      <td>1522835</td>
+      <td>Recommendations for the use of folic acid to reduce the number of cases of spina bifida and other neural tube defects.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>MTHFR c.665C&gt;T (p.Ala222Val)</td>
+      <td>7564788</td>
+      <td>Mutated methylenetetrahydrofolate reductase as a risk factor for spina bifida.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>MTHFR c.665C&gt;T (p.Ala222Val)</td>
+      <td>7647779</td>
+      <td>A candidate genetic risk factor for vascular disease: a common mutation in methylenetetrahydrofolate reductase.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>MTHFR c.665C&gt;T (p.Ala222Val)</td>
+      <td>7741859</td>
+      <td>Homocysteine metabolism in pregnancies complicated by neural-tube defects.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>MTHFR c.665C&gt;T (p.Ala222Val)</td>
+      <td>8542260</td>
+      <td>A genetic defect in 5,10 methylenetetrahydrofolate reductase in neural tube defects.</td>
+    </tr>
+  </tbody>
+</table>
+</table>
+
+<hr>
+
+<p class="mt-4 text-center"><small>AwesomeCorp - 123 Waffles Roads 12345 Demo-Ville TestLand<br>
+  VAT Number IE 1234567X</small></p>
+</body>
+</html>

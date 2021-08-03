@@ -1,0 +1,31 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --bfile dis_calc/merged2
+  --out dis_calc/scores_2
+  --score dis_calc/score_files/coronary_artery_disease_snps.txt 1 2 3
+
+Hostname: quirin-0-1
+Working directory: /media/quirin/INTENSO/dis_calc_application
+Start time: Mon Apr 26 11:49:13 2021
+
+Random number seed: 1619437753
+7698 MB RAM detected; reserving 3849 MB for main workspace.
+Allocated 2886 MB successfully, after larger attempt(s) failed.
+431 variants loaded from .bim file.
+2506 people (0 males, 0 females, 2506 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to dis_calc/scores_2.nosex .
+2506 phenotype values loaded from .fam.
+Warning: Ignoring phenotypes of missing-sex samples.  If you don't want those
+phenotypes to be ignored, use the --allow-no-sex flag.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2506 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.994582.
+431 variants and 2506 people pass filters and QC.
+Note: No phenotypes present.
+Warning: 8 lines skipped in --score file (8 due to variant ID mismatch, 0 due
+to allele code mismatch); see dis_calc/scores_2.nopred for details.
+--score: 401 valid predictors loaded.
+--score: Results written to dis_calc/scores_2.profile .
+
+End time: Mon Apr 26 11:49:13 2021

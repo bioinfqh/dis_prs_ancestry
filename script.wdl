@@ -10,6 +10,7 @@ task test {
   output {
   }
   runtime {
+  docker: "quay.io/repository/testaccountq/dis_gen_prs_ancestry"
   }
 }
 
@@ -18,5 +19,5 @@ workflow make_panel_wdl {
         String temp = "test"
     }
 
-    call make_panel { input: temp=temp}
+    call test { input: temp=temp}
 }

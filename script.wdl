@@ -10,7 +10,6 @@ task test {
   output {
   }
   runtime {
-   docker: "quay.io/repository/testaccountq/dis_gen_prs_ancestry"
   }
 }
 

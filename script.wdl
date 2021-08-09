@@ -6,6 +6,7 @@ task test {
   }
 
   command {
+  python3 dis_calc/get_id_from_vcf.py prs_vcf.vcf
   }
   output {
   }

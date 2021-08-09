@@ -54,8 +54,8 @@ COPY med_symbol.png .
 COPY requirements.txt .
 COPY base.svg.p .
 COPY run_local_anc.sh .
-COPY script.wdl
-COPY test.json
+COPY script.wdl .
+COPY test.json .
 #RUN apt-get update
 RUN mkdir MultiQC
 RUN mkdir XGMIX_infiles

@@ -11,7 +11,7 @@ task test {
   output {
   }
   runtime {
-  docker: "quay.io/repository/testaccountq/dis_gen_prs_ancestry"
+  docker: "https://github.com/bioinfqh/dis_prs_ancestry"
   }
 }
 

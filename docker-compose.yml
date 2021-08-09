@@ -6,7 +6,7 @@ services:
   # add default values for environment variables by changing PARAM=${var} to PARAM=${var:-default}
   web:
     build: .
-    command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"
+    command: bash -c "echo bla"
     environment:
       - DJANGO_ALLOWED_HOSTS=${allowed_hosts:-['*']}
     ports:
